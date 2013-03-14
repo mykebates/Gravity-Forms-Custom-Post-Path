@@ -19,6 +19,6 @@ The idea behind this plugin is to provide an easy way to post your field value o
 
 It's simple really.  More and more I have come across the need to path up a bunch of highly specific code to hook into the Gravity Form submission to intercept the post data in order to send off to CRMs like Marketo, SalesForce, etc.  I wanted an easy way to tell Gravity Forms the location to post to and here are the field names I want you to assign to the fields.
 
-This is a very lose way of being able to accomplish the same task with almost any endpoint no matter what the service is.  As long as they are expecting posted form values you should be able to effortlessly kill two birds with one stone.
+This is a very loose way of being able to accomplish the same task with almost any endpoint no matter what the service is.  As long as they are expecting posted form values you should be able to effortlessly kill two birds with one stone.
 
 ### No birds were harmed in creating this plugin.
