@@ -5,7 +5,7 @@ Post your gravity field values to an additional location such as a CRM like Mark
 
 # This is a very early working version
 
-The idea behind this plugin is to provide an easy way to post your field value out to any other endpoint.
+The point of this plugin is to provide an easy way to post your field value out to any other endpoint.
 
 - Make sure the Gravity Forms is installed and activated.
 - Install and activate Gravity-Forms-Custom-Post-Path plugin.
