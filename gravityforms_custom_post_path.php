@@ -169,7 +169,27 @@ class gravityforms_custom_post_path {
 					$fieldValue = $entry["".$fieldID.""];
 					$fieldName = $field["cppField"];
 
-	                $ourFields[$fieldName] = $fieldValue;
+					// Check if this has multiple inputs(like a checkbox list)
+					// This is the first shot at trying to tackle the issue of multiple value fields
+					// Part of the problem is every service will handle this differently
+					// Right now just crafting a csv string
+					if(count($field["inputs"])){
+						$listValues = "";
+
+						foreach ($field["inputs"] as $input) {
+							$id = $input["id"];
+							if($entry["".$id.""]){
+								$listValues .= $entry["".$id.""].", ";
+							}
+						}
+
+						if($listValues)
+							$ourFields[$fieldName] = substr($listValues, 0, -2);
+
+					}else{
+						// Not a multi input value.  Much easier to grab
+						$ourFields[$fieldName] = $fieldValue;
+					}
 				}
 			}
 		}
